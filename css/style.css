@@ -1,0 +1,117 @@
+.navbaredit{
+    background-color: #343a40;
+    color:white;
+}
+
+:root{
+    --space-black: 215;
+}
+
+p{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.h11{
+    color: #ffe4c4;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 80px;
+}
+
+strong{
+    color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p:active{
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pactive{
+    color: gray;
+}
+
+.strongsize{
+    font-size: larger;
+}
+
+#rodape{
+    font-size: 10px;
+    padding: 10px;
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.474);
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: bisque;
+    text-align: center;
+}
+
+.bntedit{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: bisque;
+}
+
+.labeledit{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+}
+
+form label{
+    margin-bottom: 5px;
+}
+
+form input{
+    border: 1px solid;
+    font-size: 15px;
+    transition: all 0.5s;
+
+}
+
+form input:focus{
+    border-radius: 10px;
+    border: 1px solid;
+    background-color: rgba(0, 255, 255, 0.216);
+}
+
+form textarea{
+    border: 1px solid;
+    transition: all 0.5s;
+}
+
+form textarea:focus{
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 255, 0.216);
+}
+
+form button{
+    background-color: rgba(0, 255, 255, 0.266);
+    border-radius: 16px;
+    border-color: rgb(47, 164, 253);
+    border: 1px solid;
+    margin-top: 5px;
+}
