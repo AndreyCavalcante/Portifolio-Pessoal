@@ -46,6 +46,10 @@
           </div>
       </hearder>
       <main class="conteiner-fluid">
+        <div class="row mt-4" onload="carregar()">
+          <h1 id="msg"></h1>
+          <img id="foto" src="" alt="">
+        </div>
         <div class="row mt-4">
             <div class="col-lg-4">
                 <img src="imgs/foto.jpg" width="300px" style="margin-top: 80px; margin-left: 45px;">
@@ -141,6 +145,31 @@
         </div>
       </footer>
         
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js">
+          function carregar(){
+            var msg = window.document.getElementById('msg')
+            var img = window.document.getElementById('foto')
+            var data = new Date()
+            var hora =data.getHours()
+
+            var comp = ''
+
+            if (hora > 5 && hora <= 12){
+              comp = "Bom dia!"
+              msg.innerHTML = `${comp}`
+              img.src = 'imgs/manha.png'
+            }
+            else if (hora > 12 && hora <= 18){
+              comp = 'Boa Tarde!'
+              msg.innerHTML = `${comp}`
+              img.src = 'imgs/tarde.png'
+            }
+            else if (hora > 18 && hora <= 24 || hora >= 0 && hora <= 5){
+              comp = 'Boa Noite!'
+              msg.innerHTML = `${comp}`
+              img.src = 'imgs/noite.png'
+          }
+          }
+        </script>
     </body>
 </html>
