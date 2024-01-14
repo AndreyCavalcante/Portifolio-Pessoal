@@ -115,3 +115,9 @@ form button{
     border: 1px solid;
     margin-top: 5px;
 }
+
+.rowedit{
+    color: bisque;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}

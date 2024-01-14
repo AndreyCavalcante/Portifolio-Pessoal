@@ -15,7 +15,7 @@
         </style>
         <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon.png">
     </head>
-    <body>
+    <body onload="carregar()">
       <hearder class="container-fluid">
         <div class="row">
           <div class="col-md-12">
@@ -46,9 +46,8 @@
           </div>
       </hearder>
       <main class="conteiner-fluid">
-        <div class="row mt-4" onload="carregar()">
+        <div class="row justify-content-center text-center rowedit" >
           <h1 id="msg">Bom dia!</h1>
-          <img id="foto" src="" alt="">
         </div>
         <div class="row mt-4">
             <div class="col-lg-4">
@@ -147,28 +146,26 @@
         
         <script src="js/bootstrap.bundle.min.js">
           function carregar(){
-            var msg = window.document.getElementById('msg')
-            var img = window.document.getElementById('foto')
-            var data = new Date()
-            var hora =data.getHours()
+              var msg = window.document.getElementById('msg')
+              var img = window.document.getElementById('imagem')
+              var data = new Date()
+              var hora = data.getHours()
 
-            var comp = ''
+              var comp = 'Bom dia'
 
-            if (hora > 5 && hora <= 12){
-              comp = "Bom dia!"
-              msg.innerHTML = `${comp}`
-              img.src = 'imgs/manha.png'
-            }
-            else if (hora > 12 && hora <= 18){
-              comp = 'Boa Tarde!'
-              msg.innerHTML = `${comp}`
-              img.src = 'imgs/tarde.png'
-            }
-            else if (hora > 18 && hora <= 24 || hora >= 0 && hora <= 5){
-              comp = 'Boa Noite!'
-              msg.innerHTML = `${comp}`
-              img.src = 'imgs/noite.png'
-          }
+              if (hora > 5 && hora <= 12){
+                  comp = "Bom dia"
+                  msg.innerHTML = `${comp}! Agora são ${hora} horas.`
+              }
+              else if (hora > 12 && hora <= 18){
+                  comp = 'Boa Tarde'
+                  msg.innerHTML = `${comp}! Agora são ${hora} horas.`
+              }
+              else if (hora > 18 && hora <= 24 || hora >= 0 && hora <= 5){
+                  comp = 'Boa Noite'
+                  msg.innerHTML = `${comp}! Agora são ${hora} horas.`
+              }
+
           }
         </script>
     </body>
