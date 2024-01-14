@@ -47,7 +47,7 @@
       </hearder>
       <main class="conteiner-fluid">
         <div class="row justify-content-center text-center rowedit" >
-          <h1 id="msg">Bom dia!</h1>
+          <h1 id="msg">Olá, Bom dia!</h1>
         </div>
         <div class="row mt-4">
             <div class="col-lg-4">
@@ -154,15 +154,15 @@
               var comp = 'Bom dia'
 
               if (hora > 5 && hora <= 12){
-                  comp = "Bom dia"
+                  comp = "Olá, Bom dia"
                   msg.innerHTML = `${comp}! Agora são ${hora} horas.`
               }
               else if (hora > 12 && hora <= 18){
-                  comp = 'Boa Tarde'
+                  comp = 'Olá, Boa Tarde'
                   msg.innerHTML = `${comp}! Agora são ${hora} horas.`
               }
               else if (hora > 18 && hora <= 24 || hora >= 0 && hora <= 5){
-                  comp = 'Boa Noite'
+                  comp = 'Olá, Boa Noite'
                   msg.innerHTML = `${comp}! Agora são ${hora} horas.`
               }
 
