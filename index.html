@@ -144,29 +144,27 @@
         </div>
       </footer>
         
-        <script src="js/bootstrap.bundle.min.js">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
           function carregar(){
               var msg = window.document.getElementById('msg')
-              var img = window.document.getElementById('imagem')
               var data = new Date()
               var hora = data.getHours()
-
-              var comp = 'Bom dia'
-
+              var comp = ''
               if (hora > 5 && hora <= 12){
-                  comp = "Olá, Bom dia"
-                  msg.innerHTML = `${comp}! Agora são ${hora} horas.`
+                  comp = 'Olá, Bom dia!';
+                  msg.innerHTML = `${comp}`
               }
               else if (hora >= 12 && hora <= 18){
-                  comp = 'Olá, Boa Tarde'
-                  msg.innerHTML = `${comp}! Agora são ${hora} horas.`
+                  comp = 'Olá, Boa Tarde!';
+                  msg.innerHTML = `${comp}`
               }
               else if (hora > 18 && hora <= 24 || hora >= 0 && hora <= 5){
-                  comp = 'Olá, Boa Noite'
-                  msg.innerHTML = `${comp}! Agora são ${hora} horas.`
+                  comp = 'Olá, Boa Noite!';
+                  msg.innerHTML = `${comp}`
               }
-
           }
         </script>
+        
     </body>
 </html>
